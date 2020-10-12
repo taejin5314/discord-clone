@@ -1,4 +1,6 @@
 .chat {
+    display: flex;
+    flex-direction: column;
     flex: 1;
-    background-color: #40464b;
+    background-color: #363a3f;
 }
