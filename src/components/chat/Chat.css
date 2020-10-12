@@ -6,6 +6,10 @@
     height: 100vh;
 }
 
+.chat__messages {
+    flex: 1;
+}
+
 .chat__input {
     color: lightgray;
     display: flex;
