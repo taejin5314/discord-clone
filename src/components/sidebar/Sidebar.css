@@ -80,6 +80,14 @@
     padding: 10px;
 }
 
+.sidebar__profileIcons>.MuiSvgIcon-root:last-child {
+    cursor: pointer;
+}
+
+.sidebar__profileIcons>.MuiSvgIcon-root:last-child:hover {
+    color: white;
+}
+
 .sidebar__profileInfo {
     flex: 1;
     padding: 10px;
