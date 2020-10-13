@@ -31,7 +31,13 @@
 }
 
 .sidebar__channelsList {
-    overflow-y: auto;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.sidebar__channelsList::-webkit-scrollbar {
+    display: none;
 }
 
 .sidebar__channelHeader {
