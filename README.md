@@ -38,6 +38,6 @@ It was very easy to deploy by using firebase. <br /><br />
 The below is the link to my discord clone project. <br />
 
 https://discord-clone-b40ec.web.app/ <br />
-_Please make sure that you logout by clicking the setting button_
+\*Please make sure that you logout by clicking the setting button
 
 ## Thank you.
