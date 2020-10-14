@@ -1,68 +1,42 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Project: Discord clone
 
-## Available Scripts
+This project is clone coding for discord by using react, redux and firebase.
 
-In the project directory, you can run:
+## 2. Initializing project
 
-### `yarn start`
+`npx create-react-app my-app --template redux`: This command is creating react app as the name of my-app. It has the template of redux so that I could use reducer easily.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 1. Login Page
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+I made login page using the discord logo, and firebase auth. As I enabled login with google account, users can login easily with their google account.
 
-### `yarn test`
+![loginpage](https://user-images.githubusercontent.com/21342802/96040954-18630780-0e39-11eb-9639-9aabb9c35a50.png)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+When the user click sign in button,
 
-### `yarn build`
+![googlelogin](https://user-images.githubusercontent.com/21342802/96041441-d4243700-0e39-11eb-8f64-0854583ccdde.png)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 2. Main Page
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+When the user logged in with his/her proper account, it will show the main page containing sidebar and chat.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![mainpage](https://user-images.githubusercontent.com/21342802/96041626-1c435980-0e3a-11eb-9e8d-94fc972cc391.png)
 
-### `yarn eject`
+I used display flex and some css styling methods, so that it looks similar to discord. <br />
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+When the user enter a message on input box and push the enter button, the message will be sent to firestore by using reducer.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 3. Deployment
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+It was very easy to deploy by using firebase. <br /><br />
+`firebase init`: Initializing firebase hosting server. I built my app in build folder, the addess should be build folder. <br />
+`npm run build`: Build the project in designated folder. <br />
+`firebase deploy`: Deploy the app.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Project Link
 
-## Learn More
+The below is the link to my discord clone project. <br />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+https://discord-clone-b40ec.web.app/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Thank you.
